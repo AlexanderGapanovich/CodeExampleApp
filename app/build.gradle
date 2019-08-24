@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.codeexampleapp"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+    }
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation androidx_view.recyclerview
+    implementation androidx_view.constraintlayout
+    implementation androidx_view.cardview
+
+    implementation rxjava2.rxjava
+    implementation rxjava2.rxandroid
+    implementation retrofit.retrofit
+    implementation retrofit.gson
+
+    implementation dagger.dagger
+    kapt dagger.daggerCompiler
+
+    implementation material.material
+    implementation picasso.picasso
+
+    implementation lifecycle.extensions
+    annotationProcessor lifecycle.compiler
+    implementation androidx.lifecycle
+
+    implementation room.roomCommon
+    implementation room.roomRuntime
+    kapt room.roomCompiler
+
+    implementation anko.anko_common
+    implementation project(':domain')
+    implementation project(':data')
+
+    kapt 'com.android.databinding:compiler:2.3.1'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+
+
+}

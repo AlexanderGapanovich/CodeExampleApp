@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/card_image_land"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/placeholder"
+                    android:id="@+id/image"/>
+
+            <TextView
+                    tools:text="Content"
+                    android:textSize="@dimen/text_size"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/text_margin_big"
+                    android:layout_margin="@dimen/border_margin"
+                    android:layout_height="wrap_content" android:id="@+id/text"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

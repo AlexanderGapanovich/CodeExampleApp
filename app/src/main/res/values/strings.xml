@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CodeExampleApp</string>
+    <string name="example_text">The president says he is unhappy that Sweden\'s PM has not intervened in the rapper\'s
+        assault case.
+    </string>
+    <string name="somth_went_wrong">Sorry, something went wrong</string>
+    <string name="connection_fail">Please, check your internet connection</string>
+    <string name="text_fail">Sorry, no text found</string>
+</resources>

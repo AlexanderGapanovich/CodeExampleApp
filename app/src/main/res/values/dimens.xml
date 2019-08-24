@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">20dp</dimen>
+    <dimen name="border_margin_small">4dp</dimen>
+    <dimen name="border_margin">8dp</dimen>
+    <dimen name="text_margin_big">16dp</dimen>
+    <dimen name="text_margin_top">8dp</dimen>
+    <dimen name="text_margin_bottom">8dp</dimen>
+    <dimen name="card_image_land">240dp</dimen>
+    <dimen name="card_image_port">170dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+
+</resources>
